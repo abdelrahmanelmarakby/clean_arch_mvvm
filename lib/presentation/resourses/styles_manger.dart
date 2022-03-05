@@ -1,4 +1,4 @@
-import 'package:clean_arch_mvvm/presentation/font_manger.dart';
+import 'package:clean_arch_mvvm/presentation/resourses/font_manger.dart';
 import 'package:flutter/widgets.dart';
 
 //TextStyle builder method
