@@ -4,12 +4,10 @@ import 'package:clean_arch_mvvm/presentation/login/LoginPage.dart';
 import 'package:clean_arch_mvvm/presentation/onboarding/OnBoardingPage.dart';
 import 'package:clean_arch_mvvm/presentation/register/RegisterPage.dart';
 import 'package:clean_arch_mvvm/presentation/resourses/strings_manager.dart';
-import 'package:clean_arch_mvvm/presentation/splash/SplashPage.dart';
 import 'package:clean_arch_mvvm/presentation/store_details/StoreDetailsPage.dart';
 import 'package:flutter/material.dart';
 
 class Routes {
-  static const String splash = '/';
   static const String login = '/login';
   static const String register = '/register';
   static const String changePassword = '/changePassword';
@@ -22,20 +20,19 @@ class RouteGenerator {
   static Route<dynamic>? generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case Routes.home:
-        return MaterialPageRoute(builder: (_) => HomePage());
+        return MaterialPageRoute(builder: (_) => const HomePage());
       case Routes.login:
-        return MaterialPageRoute(builder: (_) => LoginPage());
+        return MaterialPageRoute(builder: (_) => const LoginPage());
       case Routes.register:
-        return MaterialPageRoute(builder: (_) => RegisterPage());
-      case Routes.splash:
-        return MaterialPageRoute(builder: (_) => SplashPage());
+        return MaterialPageRoute(builder: (_) => const RegisterPage());
+
       case Routes.changePassword:
-        return MaterialPageRoute(builder: (_) => ChangePasswordPage());
+        return MaterialPageRoute(builder: (_) => const ChangePasswordPage());
 
       case Routes.storeDetails:
-        return MaterialPageRoute(builder: (_) => StoreDetailsPage());
+        return MaterialPageRoute(builder: (_) => const StoreDetailsPage());
       case Routes.onBoarding:
-        return MaterialPageRoute(builder: (_) => OnBoardingPage());
+        return MaterialPageRoute(builder: (_) => const OnBoardingPage());
       default:
         return MaterialPageRoute(builder: (_) => const Error404Page());
     }

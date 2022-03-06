@@ -1,3 +1,4 @@
+import 'package:clean_arch_mvvm/presentation/home/HomePage.dart';
 import 'package:clean_arch_mvvm/presentation/resourses/routes_manger.dart';
 import 'package:clean_arch_mvvm/presentation/resourses/theme_manger.dart';
 import 'package:flutter/material.dart';
@@ -20,7 +21,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       onGenerateRoute: RouteGenerator.generateRoute,
-      initialRoute: Routes.splash,
+      home: const HomePage(),
       theme: getApplicationTheme(),
     );
   }
