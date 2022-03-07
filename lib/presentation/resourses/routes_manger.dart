@@ -25,7 +25,6 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => const LoginPage());
       case Routes.register:
         return MaterialPageRoute(builder: (_) => const RegisterPage());
-
       case Routes.changePassword:
         return MaterialPageRoute(builder: (_) => const ChangePasswordPage());
 

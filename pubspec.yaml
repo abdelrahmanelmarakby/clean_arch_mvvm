@@ -39,6 +39,10 @@ dev_dependencies:
     sdk: flutter
   google_fonts: any
 
+flutter_assets:
+  assets_path: assets/images/
+  output_path: lib/presentation/resources/
+  filename: assets.dart
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 # The following section is specific to Flutter.

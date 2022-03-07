@@ -9,20 +9,16 @@ class MyApp extends StatefulWidget {
   //Singleton
   static const MyApp _instance = MyApp._internal();
   //Factory for creating instances of the class
-  factory MyApp() {
-    return _instance;
-  }
+  factory MyApp() => _instance;
   @override
   _MyAppState createState() => _MyAppState();
 }
 
 class _MyAppState extends State<MyApp> {
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      onGenerateRoute: RouteGenerator.generateRoute,
-      home: const HomePage(),
-      theme: getApplicationTheme(),
-    );
-  }
+  Widget build(BuildContext context) => MaterialApp(
+        onGenerateRoute: RouteGenerator.generateRoute,
+        home: const HomePage(),
+        theme: getApplicationTheme(),
+      );
 }
